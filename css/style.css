@@ -1,5 +1,9 @@
 /* запросы mobile first */
 /* стили для любой ширины */
+.container {
+    width: 0 auto;
+}
+
 .header {
     padding: 30px 0 20px 0;
     margin-bottom: 25px;
@@ -69,35 +73,31 @@ h2 {
 }
 
 .mailing-place {
-    width: 80%;
+    width: 65%;
 }
 
 .mailing {
     float: right;
 }
 
-/* стили для ширины крупнее мобильных */
-/* стили для ширины 400 пикселов и выше */
-@media (min-width: 400px) {}
 
-/* стили для ширины крупнее фаблетов */
-/* стили для ширины 550 пикселов и выше */
-@media (min-width: 550px) {
+/* стили для ширины 650 пикселов и выше */
+@media (min-width: 650px) {
     .header {
-        padding: 40px 0 50px 0;
+        padding: 40px 0 20px 0;
     }
 
     .logo {
         position: static;
         background-color: transparent;
-        font-size: 2rem;
+        font-size: 4rem;
         line-height: 1;
         letter-spacing: 1.6px;
-        top: 25px;
     }
 
     .nav .button {
         width: auto;
+        text-align: center;
     }
 
     h1 {
@@ -107,11 +107,40 @@ h2 {
     h2 {
         font-size: 4.2rem;
     }
+
+    .clearfix {
+        padding: 20px;
+        clear: both;
+    }
+
+    .footer {
+        background-color: rgb(255, 209, 143);
+        width: 100%;
+        left: 0;
+        right: 0;
+        top: 0;
+        padding: 10px 30px 0px 30px;
+    }
+
+    .nav .button {
+        width: auto;
+    }
+
+    .mailing-place {
+        width: 60%;
+    }
+
+    .mailing {
+        float: right;
+    }
 }
 
-/* стили для ширины крупнее планшетов */
-/* стили для ширины 750 пикселов и выше */
-@media (min-width: 750px) {
+/* стили для ширины 800 пикселов и выше */
+@media (min-width: 800px) {
+    .container {
+        width: 0 auto;
+    }
+
     .logo {
         font-size: 3rem;
         position: relative;
@@ -124,25 +153,29 @@ h2 {
         color: hsla(0, 0%, 2%, 0.75);
     }
 
+    .clearfix {
+        padding: 20px;
+        clear: both;
+    }
+
     .footer {
         background-color: rgb(255, 209, 143);
-        width: 100%;
+        width: 0 auto;
+        left: 0;
+        right: 0;
+        top: 0;
         padding: 10px 30px 0px 30px;
     }
 
+    .nav .button {
+        width: auto;
+    }
+
     .mailing-place {
-        width: 80%;
+        width: 70%;
     }
 
     .mailing {
         float: right;
     }
 }
-
-/* стили для ширины крупнее компьютерных мониторов */
-/* стили для ширины 1000 пикселов и выше */
-@media (min-width: 1000px) {}
-
-/* стили для ширины крупнее компьютерных HD-мониторов */
-/* стили для ширины 1200 пикселов и выше */
-@media (min-width: 1200px) {}
